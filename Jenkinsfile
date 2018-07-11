@@ -3,6 +3,14 @@ pipeline {
 	
     stages {
     
+             stage ("set JDK version") {
+                tools {
+                   jdk "Java8"
+                }
+                steps {
+                    sh 'java -version'
+                }
+            }
         stage ('Compile Stage') {
 
             steps {
