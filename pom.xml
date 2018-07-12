@@ -25,7 +25,7 @@
 	</properties>
 
 	<distributionManagement>
-		<repository>
+		<!-- <repository>
 			<uniqueVersion>false</uniqueVersion>
 			<id>sriram-nexus</id>
 			<name>libs-release-local</name>
@@ -39,12 +39,17 @@
 			<name>libs-snapshot-local</name>
 			<url>http://localhost:8081/nexus/content/repositories/libs-snapshot-local/</url>
 			<layout>default</layout>
-		</snapshotRepository>
+		</snapshotRepository> -->
+		
+		      <repository>
+         <id>localrepository</id>
+         <url>file://C:/Users/srmoorth/.m2</url>
+      </repository>
 
-	</distributionManagement>
+	</distributionManagement> 
 
 	<repositories>
-		<repository>
+		<!-- <repository>
 			<id>sriram-nexus</id>
 			<name>centralcopy</name>
 			<url>http://localhost:8081/nexus/content/groups/public</url>
@@ -55,7 +60,12 @@
 			<snapshots>
 				<enabled>true</enabled>
 			</snapshots>
-		</repository>
+		</repository> -->
+		
+      <repository>
+         <id>localrepository</id>
+         <url>file://C:/Users/srmoorth/.m2</url>
+      </repository>
 	</repositories>
 
 	<dependencies>
