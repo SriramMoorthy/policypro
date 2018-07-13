@@ -24,49 +24,22 @@
 		<java.version>1.8</java.version>
 	</properties>
 
+
 	<distributionManagement>
-		<!-- <repository>
-			<uniqueVersion>false</uniqueVersion>
-			<id>sriram-nexus</id>
-			<name>libs-release-local</name>
-			<url>http://localhost:8081/nexus/content/repositories/libs-release-local/</url>
-			<layout>default</layout>
+		<snapshotRepository>
+			<id>nexus-snapshots</id>
+			<url>http://localhost:8081/repository/maven-snapshots/</url>
+		</snapshotRepository>
+		<repository>
+			<id>nexus-releases</id>
+			<url>http://localhost:8081/repository/maven-releases/</url>
 		</repository>
 
-		<snapshotRepository>
-			<uniqueVersion>false</uniqueVersion>
-			<id>sriram-nexus</id>
-			<name>libs-snapshot-local</name>
-			<url>http://localhost:8081/nexus/content/repositories/libs-snapshot-local/</url>
-			<layout>default</layout>
-		</snapshotRepository> -->
-		
-		      <repository>
-         <id>localrepository</id>
-         <url>file://C:/Users/srmoorth/.m2</url>
-      </repository>
 
-	</distributionManagement> 
+		<!-- <repository> <id>localrepository</id> <url>file://C:/Users/srmoorth/.m2</url> 
+			</repository> -->
 
-	<repositories>
-		<!-- <repository>
-			<id>sriram-nexus</id>
-			<name>centralcopy</name>
-			<url>http://localhost:8081/nexus/content/groups/public</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</repository> -->
-		
-      <repository>
-         <id>localrepository</id>
-         <url>file://C:/Users/srmoorth/.m2</url>
-      </repository>
-	</repositories>
+	</distributionManagement>
 
 	<dependencies>
 		<dependency>
